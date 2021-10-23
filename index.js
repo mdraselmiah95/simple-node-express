@@ -3,7 +3,7 @@ const app = express();
 const port = 5000;
 
 app.get("/", (req, res) => {
-  res.send("This is my simple node express project. nice");
+  res.send("This is my simple node express project. This is installed nodemon");
 });
 
 app.listen(port, () => {
