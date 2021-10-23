@@ -22,8 +22,11 @@ const users = [
 ];
 
 app.get("/users", (req, res) => {
-  console.log(req.query);
-  res.send(users);
+  const search = req.query.search;
+  if (search) {
+  } else {
+    res.send(users);
+  }
 });
 
 app.get("/users/:id", (req, res) => {
