@@ -22,7 +22,7 @@ const users = [
 ];
 
 app.get("/users", (req, res) => {
-  res.send();
+  res.send(users);
 });
 
 app.listen(port, () => {
