@@ -37,6 +37,7 @@ app.get("/users", (req, res) => {
   }
 });
 
+//dynamic api
 app.get("/users/:id", (req, res) => {
   const id = req.params.id;
   const user = users[id];
