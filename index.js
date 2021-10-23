@@ -31,6 +31,10 @@ app.get("/users/:id", (req, res) => {
   res.send(user);
 });
 
+app.get("/fruits/mangoes/rip", (req, res) => {
+  res.send("Nice testy mango");
+});
+
 app.listen(port, () => {
   console.log("Listening to port", port);
 });
