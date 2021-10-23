@@ -24,6 +24,10 @@ const users = [
 app.get("/users", (req, res) => {
   const search = req.query.search;
   if (search) {
+    const searchResult = users.filter((user) =>
+      user.name.toLowerCase().includes(search)
+    );
+    res.send(searchResult);
   } else {
     res.send(users);
   }
