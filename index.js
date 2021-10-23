@@ -16,4 +16,4 @@ app.listen(port, () => {
   console.log("Listening to port", port);
 });
 
-//npm run start-dec
+//npm run start-dev
