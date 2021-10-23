@@ -31,6 +31,10 @@ app.get("/users/:id", (req, res) => {
   res.send(user);
 });
 
+app.get("/fruits", (req, res) => {
+  res.send(["mango", "orange", "banana", "apple"]);
+});
+
 app.get("/fruits/mangoes/rip", (req, res) => {
   res.send("Nice testy mango");
 });
