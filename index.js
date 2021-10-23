@@ -39,7 +39,7 @@ app.get("/users", (req, res) => {
 
 //app.METHOD
 app.post("/users", (req, res) => {
-  console.log("Hitting the post.");
+  console.log("Hitting the post.", req.body);
   res.send("inside post");
 });
 
