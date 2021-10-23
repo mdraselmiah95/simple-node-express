@@ -44,7 +44,7 @@ app.post("/users", (req, res) => {
   newUser.id = users.length;
   users.push(newUser);
   const newUser = console.log("Hitting the post.", req.body);
-  res.send("inside post");
+  // res.send(JSON.stringify(newUser));
 });
 
 //dynamic api
