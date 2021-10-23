@@ -22,6 +22,7 @@ const users = [
 ];
 
 app.get("/users", (req, res) => {
+  console.log(req.query);
   res.send(users);
 });
 
