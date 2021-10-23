@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
   );
 });
 
+app.get("/users", (req, res) => {
+  console.log("This is users");
+});
+
 app.listen(port, () => {
   console.log("Listening to port", port);
 });
