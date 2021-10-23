@@ -4,10 +4,12 @@ const port = 5000;
 
 app.get("/", (req, res) => {
   res.send(
-    "This is my simple node express project. This is installed nodemon, THis is  just test,automatic restart"
+    "This is my simple node express project. This is installed nodemon, THis is  just test and also"
   );
 });
 
 app.listen(port, () => {
   console.log("Listening to port", port);
 });
+
+//npm run start-dec
