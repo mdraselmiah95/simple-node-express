@@ -40,6 +40,7 @@ app.get("/users", (req, res) => {
 //app.METHOD
 app.post("/users", (req, res) => {
   console.log("Hitting the post.");
+  res.send("inside post");
 });
 
 //dynamic api
