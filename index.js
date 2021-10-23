@@ -37,6 +37,11 @@ app.get("/users", (req, res) => {
   }
 });
 
+//app.METHOD
+app.post("/users", (req, res) => {
+  console.log("Hitting the post.");
+});
+
 //dynamic api
 app.get("/users/:id", (req, res) => {
   const id = req.params.id;
