@@ -4,7 +4,7 @@ const port = 5000;
 
 app.get("/", (req, res) => {
   res.send(
-    "This is my simple node express project. This is installed nodemon, THis is  just test"
+    "This is my simple node express project. This is installed nodemon, THis is  just test,automatic restart"
   );
 });
 
