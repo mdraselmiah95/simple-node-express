@@ -26,7 +26,9 @@ app.get("/users", (req, res) => {
 });
 
 app.get("/users/:id", (req, res) => {
-  console.log(req.params.id);
+  const id = req.params.id;
+  const user = users[id];
+  res.send(user);
 });
 
 app.listen(port, () => {
