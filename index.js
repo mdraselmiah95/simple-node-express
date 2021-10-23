@@ -25,6 +25,10 @@ app.get("/users", (req, res) => {
   res.send(users);
 });
 
+app.get("/users/:id", (req, res) => {
+  console.log(req.params.id);
+});
+
 app.listen(port, () => {
   console.log("Listening to port", port);
 });
